@@ -56,11 +56,12 @@ header {
 }
 
 .dropdown-content i {
-    font-size: 20px;
+    font-size: 15px;
     margin-right: 15px;
 }
 
 .dropdown-content {
+    font-family: 'Roboto Slab', serif;
     border-radius: 4px;
     display: none;
     position: absolute;
