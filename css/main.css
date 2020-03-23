@@ -143,43 +143,22 @@ main {
     border: 3px solid black;
     background-color: grey;
     border-radius: 3px;
+    background: url("cover.gif") top center/cover;
+    position: relative;
 }
 
-.mainuser {
-    width: 15%;
-    height: 100%;
-    border-right: 3px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.user {
+.maincover {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 100px;
+    text-align: left;
 }
 
-.maintekst {
-    height: 100%;
-    width: 80%;
-    border-right: 3px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.mainblock h2, h1 {
+    width: 600px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.tekstblock {
-    height: 100%;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid blue;
-    text-align: center;
-}

@@ -55,60 +55,13 @@
         </div>
 
         <div class="mainblock">
-            <div class="mainuser">
-                <div class="user">
-                    <img class="roundimg" src="p4.png" alt="Profile Picture">
-                    <h2>Anoniem</h2>
-                </div>
-                <div class="user">
-                    <img class="roundimg" src="p1.png" alt="Profile Picture">
-                    <h2>Anoniem</h2>
-                </div>
-                <div class="user">
-                    <img class="roundimg" src="p3.png" alt="Profile Picture">
-                    <h2>Anoniem</h2>
-                </div>
-                <div class="user">
-                    <img class="roundimg" src="p5.png" alt="Profile Picture">
-                    <h2>Anoniem</h2>
-                </div>
-                <div class="user">
-                    <img class="roundimg" src="p2.png" alt="Profile Picture">
-                    <h2>Anoniem</h2>
-                </div>
-            </div>
-
-            <div class="maintekst">
-                    <div class="tekstblock">
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum modi quaerat, totam expedita odio fugiat? Labore, quasi at harum libero numquam omnis, vitae error voluptatibus ratione assumenda perferendis accusamus minima.</h3>
-                        <div class="reactie">
-                            <h3>reactieeeeeeeeeeeee</h3>
-                        </div>
-                    </div>
-                    <div class="tekstblock">
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum modi quaerat, totam expedita odio fugiat? Labore, quasi at harum libero numquam omnis, vitae error voluptatibus ratione assumenda perferendis accusamus minima.</h3>
-                        <div class="reactie">
-                            <h3>reactieeeeeeeeeeeee</h3>
-                        </div>
-                    </div>
-                    <div class="tekstblock">
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum modi quaerat, totam expedita odio fugiat? Labore, quasi at harum libero numquam omnis, vitae error voluptatibus ratione assumenda perferendis accusamus minima.</h3>
-                        <div class="reactie">
-                            <h3>reactieeeeeeeeeeeee</h3>
-                        </div>
-                    </div>
-                    <div class="tekstblock">
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum modi quaerat, totam expedita odio fugiat? Labore, quasi at harum libero numquam omnis, vitae error voluptatibus ratione assumenda perferendis accusamus minima.</h3>
-                        <div class="reactie">
-                            <h3>reactieeeeeeeeeeeee</h3>
-                        </div>
-                    </div>
-                    <div class="tekstblock">
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum modi quaerat, totam expedita odio fugiat? Labore, quasi at harum libero numquam omnis, vitae error voluptatibus ratione assumenda perferendis accusamus minima.</h3>
-                        <div class="reactie">
-                            <h3>reactieeeeeeeeeeeee</h3>
-                        </div>
-                    </div>
+            <div class="maincover">
+                <h1>Welkom op de website!</h1>
+                <h2>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, provident 
+                ea laudantium ullam possimus, suscipit est quod excepturi fugiat illo ad 
+                nobis explicabo sapiente veritatis culpa! Obcaecati, vero. Labore, quasi!
+                </h2>
             </div>
         </div>
     </main>
