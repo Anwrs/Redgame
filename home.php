@@ -38,22 +38,22 @@ include 'header.php';
     
         $gta = '<div  class="gamebox">
         <a href="">
-        <img src="images/gta.jpg" alt="game">
-        Gta
+        <img src="images/gtacover.jpg" alt="game">
+        GTA V
         </a>
         </div>';
 
         $rs = '<div  class="gamebox">
         <a href="">
         <img src="images/rs.jpg" alt="game">
-        R6S
+        Rainbow Six<br>Siege
         </a>
         </div>';
 
         $lol = '<div  class="gamebox">
         <a href="">
-        <img src="images/lol.jpg" alt="game">
-        League of Legends
+        <img src="images/lo.jpg" alt="game">
+        League of<br> Legends
         </a>
         </div>';
 

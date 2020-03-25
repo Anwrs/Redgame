@@ -104,6 +104,7 @@ header {
     justify-content: start;
     align-items: center;
     flex-direction: column;
+    transition: .5s;
 }
 
 .gamebox img {
@@ -111,6 +112,9 @@ header {
     height: 110px;
     border-radius: 50%;
     border: 3px solid white;
+    transition: .5s;
+    background: rgb(24,47,61);
+    background: linear-gradient(0deg, rgba(24,47,61,1) 0%, rgba(182,176,165,1) 100%);
 }
 
 .gamebox a {
@@ -120,6 +124,14 @@ header {
     flex-direction: column;
     text-align: center;
     color: white;
+}
+
+.gamebox:hover {
+    transform: scale(1.4);
+}
+
+.gamebox:hover img {
+    border-radius: 15%;
 }
 
 
