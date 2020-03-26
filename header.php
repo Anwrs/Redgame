@@ -13,7 +13,7 @@
     <header>
         <div class="nav">
             <div class="navimg">
-                <a href="home.php"><img src='images/cover1.png' alt="cover-logo"></a>
+                <a href="index.php"><img src='images/cover1.png' alt="cover-logo"></a>
             </div>
 
             <div class="navbar">
