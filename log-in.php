@@ -12,14 +12,14 @@
 <body class="login">
 
     <div class="btn-home">
-        <a href="home.php">
+        <a href="index.php">
             <i class="fas fa-angle-left"></i>  
         GO BACK
         </a>
     </div>
 
     <div class="in-log">
-        <form class="form-inlog" action="home.php" method="post">
+        <form class="form-inlog" action="index.php" method="post">
             <img src="images/profile1.png" alt="logo">
             
             <div class="inp">
