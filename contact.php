@@ -62,7 +62,7 @@ include 'header.php';
                         <option value="other">Other...</option>
                     </select>
                     <input type="text" name="subject" id="subject" style='display:none;'/ placeholder="Subject">
-                    <textarea placeholder="Discription..." required rows="25" cols="100"></textarea>
+                    <textarea placeholder="Discription..." required rows="18" cols="120"></textarea>
                     <input type="submit" value="submit">
                 </form>
             </div>
