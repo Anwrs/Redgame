@@ -1,0 +1,93 @@
+body {
+    background: rgb(10, 6, 42);
+    background: linear-gradient(139deg, rgba(10, 6, 42, 1) 2%, rgba(153, 153, 153, 1) 36%, rgba(222, 222, 222, 1) 77%);
+    font-family: 'Roboto Slab', serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 85%;
+}
+
+.info {
+    display: flex;
+    width: 60%;
+    height: 100%;
+}
+
+.infomakers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100%;
+}
+
+.def {
+    display: flex;
+    flex-direction: row;
+}
+
+.rijen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.def span {
+    font-size: 20px;
+}
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+input {
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    height: 4.5%;
+    border-radius: 2px;
+    width: 60%;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+select {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 2px;
+    height: 4.5%;
+    width: 50%;
+}
+
+.def img {
+    width: 100px;
+    margin-right: 5%;
+    height: auto;
+}
