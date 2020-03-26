@@ -19,7 +19,7 @@
     </div>
 
     <div class="in-log">
-        <form class="form-inlog" action="home.php" method="post">
+        <form class="form-inlog" action="index.php" method="post">
             <img src="images/profile1.png" alt="logo">
             
             <div class="inp">
