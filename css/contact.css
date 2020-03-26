@@ -1,7 +1,6 @@
 body {
     background: rgb(10, 6, 42);
-    background: linear-gradient(139deg, rgba(10, 6, 42, 1) 2%, rgba(153, 153, 153, 1) 36%, rgba(222, 222, 222, 1) 77%);
-    font-family: 'Roboto Slab', serif;
+    background: linear-gradient(139deg, #050922 2%, rgba(153, 153, 153, 1) 36%, rgba(222, 222, 222, 1) 77%);
 }
 
 main {
