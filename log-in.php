@@ -12,7 +12,7 @@
 <body class="login">
 
     <div class="btn-home">
-        <a href="home.php">
+        <a href="index.php">
             <i class="fas fa-angle-left"></i>  
         GO BACK
         </a>
