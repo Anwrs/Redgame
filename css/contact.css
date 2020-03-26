@@ -62,10 +62,13 @@ form {
 input {
     border: none;
     padding: 5px;
-    font-size: 15px;
+    font-size: 18px;
     height: 4.5%;
     border-radius: 2px;
     width: 60%;
+    outline: none;
+    background-color: transparent;
+    border: thin #000000 solid;
 }
 
 textarea {
@@ -73,16 +76,34 @@ textarea {
     resize: none;
     font-size: 15px;
     border-radius: 2px;
+    outline: none;
+    background-color: transparent;
+    border: thin #000000 solid;
 }
 
 select {
+    cursor: pointer;
     border: none;
     outline: none;
-    font-size: 15px;
+    font-size: 18px;
     padding: 5px;
     border-radius: 2px;
     height: 4.5%;
     width: 50%;
+    outline: none;
+    background-color: transparent;
+    border: thin #000000 solid;
+    appearance: none;
+}
+
+option {
+    background-color: transparent;
+}
+
+::placeholder {
+    color: black;
+    font-size: 20px;
+    padding-left: 5px;
 }
 
 .def img {
