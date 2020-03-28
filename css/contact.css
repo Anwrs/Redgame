@@ -68,7 +68,7 @@ input {
     width: 60%;
     outline: none;
     border: thin #000000 solid;
-    color: grey;
+    color: black;
     background-color: #eeeeee;
     box-shadow: 2px 2px 5px #868686;
 }
@@ -91,11 +91,11 @@ select {
     padding: 5px;
     border-radius: 2px;
     height: 4.5%;
-    width: 50%;
+    width: 60%;
     outline: none;
     border: thin #000000 solid;
     appearance: none;
-    color: grey;
+    color: black;
     background-color: #eeeeee;
     box-shadow: 2px 2px 5px #868686;
 }
@@ -110,4 +110,12 @@ select {
     width: auto;
     margin-right: 5%;
     height: 150px;
+}
+
+#send {
+    transition: .4s;
+}
+
+#send:hover {
+    background-color: #6EE6C7;
 }

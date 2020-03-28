@@ -55,15 +55,16 @@ include 'header.php';
                 <form action="contact.php" method="post">
                     <input type="text" name="name" id="" placeholder="Name" required>
                     <input type="email" name="email" id="" placeholder="E-mail" required>
+                    <input type="tell" name="number" id="" placeholder="+31 01 2345678 not required" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
                     <select onchange='check(this.value);'>
-                        <option value="bug">Bug Report</option>
-                        <option value="abuse">Abuse Report</option>
+                        <option value="bug">Bug report</option>
+                        <option value="abuse">Report abuse</option>
                         <option value="contact">Contact</option>
                         <option value="other">Other...</option>
                     </select>
                     <input type="text" name="subject" id="subject" style='display:none;'/ placeholder="Subject">
                     <textarea placeholder="Discription..." required rows="18" cols="120"></textarea>
-                    <input type="submit" value="submit">
+                    <input id="send" class="send" type="submit" value="submit">
                 </form>
             </div>
         </div>
