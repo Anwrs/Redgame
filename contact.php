@@ -10,6 +10,7 @@ include 'header.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Contact us!</title>
 </head>
 
@@ -84,17 +85,28 @@ include 'header.php';
                     <input type="text" name="name" id="" placeholder="Name" required>
                     <input type="email" name="email" id="" placeholder="E-mail" required>
                     <select onchange='check(this.value);'>
-                        <option value="contact">Contact developers</option>
-                        <option value="bug">Report bug</option>
-                        <option value="abuse">Report user</option>
-                        <option value="other">Other...</option>
+                        <option name='select' value="contactDevelopers">Contact developers</option>
+                        <option name='select' value="reportBug">Report bug</option>
+                        <option name='select' value="reportUser">Report user</option>
+                        <option name='select' value="other">Other...</option>
                     </select>
                     <input type="text" name="subject" id="subject" style='display:none;'/ placeholder="Subject">
-                    <textarea placeholder="Discription..." required rows="13" cols="120"></textarea>
-                    <input id="send" class="send" type="submit" value="submit">
+                    <textarea name="onderwerp" placeholder="Discription..." required rows="13" cols="120"></textarea>
+                    <input id="send" name="send" class="send" type="submit" value="submit">
                 </form>
             </div>
         </div>
+        <?php
+        if (isset($_POST['send'])) {
+            $naam = $_POST['name'];
+            $email = $_POST['email'];
+            $keuze = $_POST['select'];
+            $subject = $_POST['subject'];
+            $onderwerp = $_POST['onderwerp'];
+            $contactopnemen = array($naam, $email, $keuze, $subject, $onderwerp);
+        }
+        ?>
+
     </main>
     <script>
         var Amodal = document.getElementById("anouar-modal");
@@ -130,24 +142,31 @@ include 'header.php';
             Dmodal.style.display = "none";
         }
 
-        window.onclick = function(event) {
+        window.addEventListener("click", function(event) {
             if (event.target == Amodal) {
                 Amodal.style.display = "none";
+                exit;
             }
-        }
-        window.onclick = function(event) {
+
+        });
+        window.addEventListener("click", function(event) {
             if (event.target == Ymodal) {
                 Ymodal.style.display = "none";
+                exit;
             }
-        }
-        window.onclick = function(event) {
+
+        });
+        window.addEventListener("click", function(event) {
             if (event.target == Mmodal) {
                 Mmodal.style.display = "none";
+                exit;
             }
-        }
+
+        });
         window.onclick = function(event) {
             if (event.target == Dmodal) {
                 Dmodal.style.display = "none";
+                exit;
             }
         }
         // boven = modal only!
