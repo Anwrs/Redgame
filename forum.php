@@ -1,6 +1,9 @@
 <?php
 include 'header.php';
+<<<<<<< HEAD
 include 'database.php';
+=======
+>>>>>>> 26153bdc4fa189662d003588fe06e426dca1c1ee
 ?>
 
 <!DOCTYPE html>

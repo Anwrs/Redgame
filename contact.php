@@ -1,6 +1,5 @@
 <?php
 include 'header.php';
-include 'database.php';
 ?>
 
 <!DOCTYPE html>
