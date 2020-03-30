@@ -14,7 +14,7 @@
     <div class="btn-home">
         <a href="index.php">
             <i class="fas fa-angle-left"></i>  
-        GO BACK
+            HOME
         </a>
     </div>
 
@@ -36,9 +36,8 @@
         </form>
 
         <div class="extra">
-            <div class="streep"></div>
-            <button type="submit">Password forgotten?</button>
-            <button type="submit">Register here!</button>
+            <button type="submit"><a href="">Password forgotten?</a></button>
+            <button type="submit"><a href="register.php">Register here!</a></button>
         </div>
     </div>
 
