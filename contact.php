@@ -3,7 +3,7 @@ include 'header.php';
 
 ?>
 <?php
-$servername = "https://projects.bit-academy.nl/phpMyAdmin/:3306";
+$servername = "https://projects.bit-academy.nl:3306";
 $username = "redgame";
 $password = "TVvWpPhGLv7VGhuF";
 
