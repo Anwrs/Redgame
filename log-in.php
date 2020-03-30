@@ -36,8 +36,8 @@
         </form>
 
         <div class="extra">
-            <button type="submit"><a href="">Password forgotten?</a></button>
-            <button type="submit"><a href="register.php">Register here!</a></button>
+            <a href="#"><button type="submit">Password forgotten?</button></a>
+            <a href="register.php"><button type="submit">Register here!</button></a>
         </div>
     </div>
 
