@@ -10,6 +10,7 @@ include 'header.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Contact us!</title>
 </head>
 
@@ -130,24 +131,31 @@ include 'header.php';
             Dmodal.style.display = "none";
         }
 
-        window.onclick = function(event) {
+        window.addEventListener("click", function(event) {
             if (event.target == Amodal) {
                 Amodal.style.display = "none";
+                exit;
             }
-        }
-        window.onclick = function(event) {
+
+        });
+        window.addEventListener("click", function(event) {
             if (event.target == Ymodal) {
                 Ymodal.style.display = "none";
+                exit;
             }
-        }
-        window.onclick = function(event) {
+
+        });
+        window.addEventListener("click", function(event) {
             if (event.target == Mmodal) {
                 Mmodal.style.display = "none";
+                exit;
             }
-        }
+
+        });
         window.onclick = function(event) {
             if (event.target == Dmodal) {
                 Dmodal.style.display = "none";
+                exit;
             }
         }
         // boven = modal only!
