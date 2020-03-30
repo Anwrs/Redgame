@@ -23,6 +23,13 @@ include 'header.php';
                         <h1>CEO - Anouar</h1>
                         <span>Email: 123@gmail.com</span>
                         <span>number: 06 12345678910</span>
+                        <span class="meerinfo" id="anouar">More info</span>
+                        <div id="anouar-modal" class="modal">
+                            <div class="modal-content">
+                                <span id="closeAnouar" class="close">&times;</span>
+                                <p>Some text in the Modal..</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="def" id="def2">
@@ -31,6 +38,13 @@ include 'header.php';
                         <h1>CEO - Youp</h1>
                         <span>Email: 123@gmail.com</span>
                         <span>number: 06 12345678910</span>
+                        <span class="meerinfo" id="youp">More info</span>
+                        <div id="youp-modal" class="modal">
+                            <div class="modal-content">
+                                <span id="closeYoup" class="close">&times;</span>
+                                <p>Some text in the Modal..</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="def" id="def3">
@@ -39,6 +53,13 @@ include 'header.php';
                         <h1>COO - Mark</h1>
                         <span>Email: 123@gmail.com</span>
                         <span>number: 06 1234567810</span>
+                        <span class="meerinfo" id="mark">More info</span>
+                        <div id="mark-modal" class="modal">
+                            <div class="modal-content">
+                                <span id="closeMark" class="close">&times;</span>
+                                <p>Some text in the Modal..</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="def" id="def4">
@@ -47,6 +68,13 @@ include 'header.php';
                         <h1>COO - Daan</h1>
                         <span>Email: 123@gmail.com</span>
                         <span>number: 06 12345678910</span>
+                        <span class="meerinfo" id="daan">More info</span>
+                        <div id="daan-modal" class="modal">
+                            <div class="modal-content">
+                                <span id="closeDaan" class="close">&times;</span>
+                                <p>Some text in the Modal..</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,6 +97,61 @@ include 'header.php';
         </div>
     </main>
     <script>
+        var Amodal = document.getElementById("anouar-modal");
+        var Ymodal = document.getElementById("youp-modal");
+        var Mmodal = document.getElementById("mark-modal");
+        var Dmodal = document.getElementById("daan-modal");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        anouar.onclick = function() {
+            Amodal.style.display = "block";
+        }
+        youp.onclick = function() {
+            Ymodal.style.display = "block";
+        }
+        mark.onclick = function() {
+            Mmodal.style.display = "block";
+        }
+        daan.onclick = function() {
+            Dmodal.style.display = "block";
+        }
+
+        closeAnouar.onclick = function() {
+            Amodal.style.display = "none";
+        }
+        closeYoup.onclick = function() {
+            Ymodal.style.display = "none";
+        }
+        closeMark.onclick = function() {
+            Mmodal.style.display = "none";
+        }
+        closeDaan.onclick = function() {
+            Dmodal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == Amodal) {
+                Amodal.style.display = "none";
+            }
+        }
+        window.onclick = function(event) {
+            if (event.target == Ymodal) {
+                Ymodal.style.display = "none";
+            }
+        }
+        window.onclick = function(event) {
+            if (event.target == Mmodal) {
+                Mmodal.style.display = "none";
+            }
+        }
+        window.onclick = function(event) {
+            if (event.target == Dmodal) {
+                Dmodal.style.display = "none";
+            }
+        }
+        // boven = modal only!
+
         function check(val) {
             var element = document.getElementById('subject');
             if (val == 'other')
