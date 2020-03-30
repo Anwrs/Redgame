@@ -130,7 +130,7 @@ select {
 .meerinfo {
     width: 25%;
     text-align: center;
-    cursor: pointer;
+    cursor: alias;
     color: white;
     font-family: inherit;
     text-decoration: none;
@@ -144,6 +144,7 @@ select {
 
 .modal {
     display: none;
+    position: relative;
     position: fixed;
     color: black;
     z-index: 1;
@@ -154,21 +155,28 @@ select {
     height: 100%;
     overflow: auto;
     background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
     background-color: #fefefe;
+    cursor: default;
+    font-family: inherit;
+    font-size: 20px;
+    position: relative;
     color: black;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 70%;
+    height: 50%;
+    border-radius: 2px;
 }
 
 .close {
     color: #aaaaaa;
-    float: right;
+    position: absolute;
+    right: 1%;
     font-size: 28px;
     font-weight: bold;
 }
@@ -176,5 +184,9 @@ select {
 .close:hover, .close:focus {
     color: #000;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.modal:hover {
     cursor: pointer;
 }

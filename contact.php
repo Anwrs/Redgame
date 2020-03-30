@@ -27,7 +27,7 @@ include 'header.php';
                         <div id="anouar-modal" class="modal">
                             <div class="modal-content">
                                 <span id="closeAnouar" class="close">&times;</span>
-                                <p>Some text in the Modal..</p>
+                                <p>Anouar vull hier wat in...</p>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ include 'header.php';
                         <div id="youp-modal" class="modal">
                             <div class="modal-content">
                                 <span id="closeYoup" class="close">&times;</span>
-                                <p>Some text in the Modal..</p>
+                                <p>Youp vull hier wat in...</p>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ include 'header.php';
                         <div id="mark-modal" class="modal">
                             <div class="modal-content">
                                 <span id="closeMark" class="close">&times;</span>
-                                <p>Some text in the Modal..</p>
+                                <p>Mark vull hier wat in...</p>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ include 'header.php';
                         <div id="daan-modal" class="modal">
                             <div class="modal-content">
                                 <span id="closeDaan" class="close">&times;</span>
-                                <p>Some text in the Modal..</p>
+                                <p>Daan vull hier wat in...</p>
                             </div>
                         </div>
                     </div>
@@ -84,9 +84,9 @@ include 'header.php';
                     <input type="text" name="name" id="" placeholder="Name" required>
                     <input type="email" name="email" id="" placeholder="E-mail" required>
                     <select onchange='check(this.value);'>
-                        <option value="bug">Bug report</option>
-                        <option value="abuse">Report abuse</option>
-                        <option value="contact">Contact def' s</option>
+                        <option value="contact">Contact developers</option>
+                        <option value="bug">Report bug</option>
+                        <option value="abuse">Report user</option>
                         <option value="other">Other...</option>
                     </select>
                     <input type="text" name="subject" id="subject" style='display:none;'/ placeholder="Subject">
