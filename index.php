@@ -19,7 +19,7 @@ include 'header.php';
         <div class="main-text">
             <h1>
                 <span style="font-size: 50px; display:flex; align-items:center; justify-content:center;">
-                    Welcome on<img style="width:200px; position:relative; left: 15px;" src="images/coverredgame.png" alt="redgame">
+                    Welcome to<img style="width:200px; position:relative; left: 15px;" src="images/coverredgame.png" alt="redgame">
                 </span><br>
                 On our website you can talk to other dedicated gamers about your favorite game!
                 You can talk about tactics, updates, new meta's and your experiences with the game.
