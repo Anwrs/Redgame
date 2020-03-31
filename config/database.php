@@ -1,5 +1,5 @@
-
 <?php
+
 $servername = "localhost:3306";
 $username = "redgame";
 $password = "TVvWpPhGLv7VGhuF";
@@ -13,5 +13,6 @@ catch(PDOException $e)
     {
     echo "Connection failed: " . $e->getMessage();
     }
+
 ?>
 
