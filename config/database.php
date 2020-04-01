@@ -1,18 +1,27 @@
 <?php
 
-$servername = "localhost:3306";
-$username = "redgame";
-$password = "TVvWpPhGLv7VGhuF";
+    $host = 'localhost:3306';
+    $db   = 'redgame';
+    $user = 'redgame';
+    $pass = 'TVvWpPhGLv7VGhuF';
+    $charset = 'utf8mb4';
 
-try {
-    $conn = new PDO("mysql:host=$servername;dbname=redgame", $username, $password);
-    // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    }
-catch(PDOException $e)
-    {
-    echo "Connection failed: " . $e->getMessage();
+    $options = [
+        \PDO::ATTR_ERRMODE            => \PDO::ERRMODE_EXCEPTION,
+        \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
+        \PDO::ATTR_EMULATE_PREPARES   => false,
+    ];
+    $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+    try {
+        $pdo = new \PDO($dsn, $user, $pass, $options);
+    } catch (\PDOException $e) {
+        throw new \PDOException($e->getMessage(), (int)$e->getCode());
     }
 
+    // Gebruik deze code om dingen uit de database te pakken.
+    // $stmt = $pdo->query("SELECT * FROM users");
+    // while ($row = $stmt->fetch()) {
+    // echo $row['username']."<br />\n";
+    // }
 ?>
 
