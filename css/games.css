@@ -1,0 +1,29 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: rgb(10,6,42);
+    background: linear-gradient(139deg, rgba(10,6,42,1) 2%, rgba(137,240,255,1) 77%);
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+#explanation{
+    font-size: 20px;
+    width: 700px;
+    text-align: center;
+}
+
+.photo{
+    height: 100px;
+    width: 100px;
+}
+
+#games{
+    height: 60%;
+}
