@@ -1,6 +1,8 @@
 <?php 
 include 'config/database.php';
+include 'config/server.php';
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,73 +22,37 @@ include 'config/database.php';
             <i class="fas fa-angle-left"></i>  
             LOGIN
         </a>
-    </div>   
-
-    <div>
-        <?php 
-            $errors = array();
-            $name = $email = $gender = $password = $passwordtwo = "";
-
-            if(isset($_POST['create'])) {
-                $username = $_POST['username'];
-                $email = $_POST['email'];
-                $gender = $_POST['gender'];
-                $password = $_POST['password'];
-                $passwordtwo = $_POST['passwordtwo'];
-
-                if(empty($name)) {
-                    $errors['username'] = "Username is Required!";
-                }
-                if(empty($email)) {
-                    $errors['email'] = "Email is Required!";
-                }
-                if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                    $errors['email'] = "Email Adress is not valid!";
-                }
-                if(empty($gender)) {
-                    $errors['gender'] = "Gender is Required!";
-                }
-                if(empty($password)) {
-                    $errors['password'] = "Password is Required!";
-                }
-                if(empty($name)) {
-                    $errors['passwordtwo'] = "Confirmd password is Required!";
-                }
-             
-                if($password !== $passwordtwo) {
-                    $errors['password'] = "The two passwords do not match";
-                }
-                
-
-
-            }
-        ?>
     </div>
 
+    <div class="errorbox">
+    <?php
+    include ('config/errors.php');
+    ?>  
+    </div>  
 
     <div class="register">
         <form class="form-reg" action="register.php" method="post">
             <img src="images/profile1.png" alt="logo">
             
-                <label for="name">Username</label>
-                <input type="text" placeholder="Your username" name="username" id="" required>
+            <label <?php if ($created = false){ echo 'style="display:none;"'; } ?> for="name">Username</label>
+            <input <?php if ($created = false){ echo 'style="display:none;"'; } ?> type="text" placeholder="Your username" name="username">
 
-                <label for="name">Email</label>
-                <input type="text" placeholder="Your email" name="email" id="" required>
+            <label <?php if ($created = false){ echo 'style="display:none;"'; } ?> for="name">Email</label>
+            <input <?php if ($created = false){ echo 'style="display:none;"'; } ?> type="text" placeholder="Your email" name="email">
 
-                <div class="gender">
-                    <label for="gender">Gender</label>
-                    <div>
-                        <input type="radio" id="bol" name="gender" value="female">Female
-                        <input type="radio" id="bol" name="gender" value="male">Male
-                    </div>
+            <div <?php if ($created = false){ echo 'style="display:none;"'; } ?> class="gender">
+                <label for="gender">Gender</label>
+                <div>
+                    <input type="radio" id="bol" name="gender" value="female">Female
+                    <input type="radio" id="bol" name="gender" value="male">Male
                 </div>
+            </div>
             
-                <label for="password">Password</label>
-                <input type="password" placeholder="Your password" name="password" id="" required>
-                <input type="password" placeholder="Confirm password" name="passwordtwo" id="" required>
+            <label <?php if ($created = false){ echo 'style="display:none;"'; } ?> for="password">Password</label>
+            <input <?php if ($created = false){ echo 'style="display:none;"'; } ?> type="password" placeholder="Your password" name="password">
+            <input <?php if ($created = false){ echo 'style="display:none;"'; } ?> type="password" placeholder="Confirm password" name="password_two">
 
-            <button type="submit" name="create">Sign up !</button>
+            <button <?php if ($created = false){ echo 'style="display:none;"'; } ?> type="submit" name="create">Sign up !</button>
         </form>
 
     </div>

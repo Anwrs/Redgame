@@ -429,3 +429,23 @@ header {
     width: 20px;
     margin-left: 20px;
 }
+
+.errors {
+    position: absolute;
+    left: 5%;
+    top: 35%;
+    border: 2px solid rgb(255, 0, 0);
+    background-color: rgba(207, 61, 24, 0.473);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: rgb(230, 189, 189);
+}
+
+.errors p {
+    margin: 0;
+    margin-bottom: 4px;
+    font-size: 20px;
+}
