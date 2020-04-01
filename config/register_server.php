@@ -16,7 +16,18 @@ if (isset($_POST['create'])) {
     $gender = $_POST['gender'];
     $password = $_POST['password'];
     $password_two = $_POST['password_two'];
+    
+    $username = strip_tags($username);
+    $email = strip_tags($email);
+    $password = strip_tags($password);
 
+    $username = htmlspecialchars($username);
+    $email = htmlspecialchars($email);
+    $password = htmlspecialchars($password); 
+
+    $username = htmlentities($username);
+    $email = htmlentities($email);
+    $password = htmlentities($password); 
 
     if (empty($username)) {
         array_push($errors, "Username is required");
@@ -25,7 +36,7 @@ if (isset($_POST['create'])) {
     }
     if (strlen($username) > 16) {
         array_push($errors, "Username cant be longer than 16 characters");
-    }
+    } 
     if (empty($email)) {
         array_push($errors, "Email is required");
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -46,16 +57,18 @@ if (isset($_POST['create'])) {
         array_push($errors, "The two passwords do not match");
     }
 
-    if (count($errors) == 0) {
-        $check_username = $pdo->query("SELECT username FROM users WHERE username='$username'");
-        if ($check_username) {
-            array_push($errors, "Username is already being used");
-        } elseif (count($errors) == 0) {
-            $check_email = $pdo->query("SELECT email FROM users WHERE email='$email'");
-            if ($check_email) {
-                array_push($errors, "Email is already being used");
-            }
-        }
+    $stmt = $pdo->prepare("SELECT email FROM users WHERE email=?");
+    $stmt->execute([$email]); 
+    $user_email = $stmt->fetch();
+    if ($user_email) {
+        array_push($errors, "Email adress is already being used");
+    }
+    
+    $stmt = $pdo->prepare("SELECT username FROM users WHERE username=?");
+    $stmt->execute([$username]); 
+    $user_name = $stmt->fetch();
+    if ($user_name) {
+        array_push($errors, "Username is already being used");
     }
     
     if (count($errors) == 0) {
@@ -65,7 +78,6 @@ if (isset($_POST['create'])) {
 
     $created = false;  
     echo "Account gemaakt :D";
-    }
-        
+    }    
 }
 
