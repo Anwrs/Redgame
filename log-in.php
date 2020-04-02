@@ -1,5 +1,6 @@
 <?php
 include 'config/database.php';
+include 'config/inlog/inlog_server.php';
 ?>
 
 <!DOCTYPE html>
@@ -22,21 +23,28 @@ include 'config/database.php';
         </a>
     </div>
 
+    <div>
+    <?php
+    include ('config/inlog/inlog_errors.php');
+    echo "$username  $password";
+    ?>  
+    </div>
+
     <div class="in-log">
-        <form class="form-inlog" action="index.php" method="post">
+        <form class="form-inlog" action="log-in.php" method="post">
             <img src="images/profile1.png" alt="logo">
             
             <div class="inp">
                 <label for="name">Username</label>
-                <input type="text" placeholder="Your username.." name="username" id="" required>
+                <input type="text" placeholder="Your username.." name="username" id="">
             </div>
             
             <div class="inb">
                 <label for="password">Password</label>
-                <input type="password" placeholder="Your password.." name="password" id="" required>
+                <input type="password" placeholder="Your password.." name="password" id="">
             </div>
 
-            <button type="submit">Sign in</button>
+            <button type="submit" name="login">Sign in</button>
         </form>
 
         <div class="extra">

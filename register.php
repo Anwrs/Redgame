@@ -1,6 +1,6 @@
 <?php 
 include 'config/database.php';
-include 'config/server.php';
+include 'config/register/register_server.php'; 
 ?>
 
 
@@ -24,23 +24,36 @@ include 'config/server.php';
         </a>
     </div>
 
-    <div class="errorbox">
+    <div>
     <?php
-    include ('config/errors.php');
+    include ('config/register/register_errors.php');
     ?>  
-    </div>  
+    </div>
+
+    <div>
+    <?php
+    if (isset($_POST['create'])) {
+        if (count($errors) == 0) {
+            echo '<div class="done">';
+            echo '<p>Your account was made!</p>';
+            echo '<p>Welcome ' . $username . '!</p>';
+            echo '</div>';
+        }
+    }
+    ?>
+    </div>
 
     <div class="register">
         <form class="form-reg" action="register.php" method="post">
             <img src="images/profile1.png" alt="logo">
             
-            <label <?php if ($created = false){ echo 'style="display:none;"'; } ?> for="name">Username</label>
-            <input <?php if ($created = false){ echo 'style="display:none;"'; } ?> type="text" placeholder="Your username" name="username">
+            <label for="name">Username</label>
+            <input type="text" placeholder="Your username" name="username">
 
-            <label <?php if ($created = false){ echo 'style="display:none;"'; } ?> for="name">Email</label>
-            <input <?php if ($created = false){ echo 'style="display:none;"'; } ?> type="text" placeholder="Your email" name="email">
+            <label for="name">Email</label>
+            <input type="text" placeholder="Your email" name="email">
 
-            <div <?php if ($created = false){ echo 'style="display:none;"'; } ?> class="gender">
+            <div class="gender">
                 <label for="gender">Gender</label>
                 <div>
                     <input type="radio" id="bol" name="gender" value="female">Female
@@ -48,11 +61,11 @@ include 'config/server.php';
                 </div>
             </div>
             
-            <label <?php if ($created = false){ echo 'style="display:none;"'; } ?> for="password">Password</label>
-            <input <?php if ($created = false){ echo 'style="display:none;"'; } ?> type="password" placeholder="Your password" name="password">
-            <input <?php if ($created = false){ echo 'style="display:none;"'; } ?> type="password" placeholder="Confirm password" name="password_two">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Your password" name="password">
+            <input type="password" placeholder="Confirm password" name="password_two">
 
-            <button <?php if ($created = false){ echo 'style="display:none;"'; } ?> type="submit" name="create">Sign up !</button>
+            <button type="submit" name="create">Sign up !</button>
         </form>
 
     </div>
