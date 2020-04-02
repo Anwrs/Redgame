@@ -40,7 +40,7 @@
             <div class="navbar">
                 <nav class="bar">
                     <a href="index.php"><i class="fas fa-home"></i> HOME</a>
-                    <a href="#"><i class="fas fa-gamepad"></i> GAMES</a>
+                    <a href="games.php"><i class="fas fa-gamepad"></i> GAMES</a>
                     <a href="forum.php"><i class="fas fa-sticky-note"></i> FORUM</a>
                     <a href="contact.php"><i class="fas fa-comment"></i> CONTACT</a>
                     <a href="log-in.php"><i class="fas fa-sign-in-alt"></i> LOG-IN</a>
