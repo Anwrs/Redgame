@@ -81,34 +81,29 @@ include 'config/database.php';
                     </div>
                 </div>
             </div>
+        <?php
+        include 'contact_db.php';
+        ?>
 
             <div class="contactform">
                 <form action="contact.php" method="post">
-                    <input type="text" name="name" id="" placeholder="Name" required>
-                    <input type="email" name="email" id="" placeholder="E-mail" required>
+                    <input type="text" name="name" id="" placeholder="Name" >
+                    <input type="email" name="email" id="" placeholder="E-mail" >
                     <select onchange='check(this.value);'>
                         <option name='select' value="contactDevelopers">Contact developers</option>
                         <option name='select' value="reportBug">Report bug</option>
                         <option name='select' value="reportUser">Report user</option>
-                        <option name='select' value="other">Other...</option>
+                        <option>Other...</option>
                     </select>
-                    <input type="text" name="subject" id="subject" style='display:none;'/ placeholder="Subject">
-                    <textarea name="onderwerp" placeholder="Discription..." required rows="13" cols="120"></textarea>
+                    <input name='select' value="other" type="text" id="subject" style='display:none;'/ placeholder="Subject">
+                    <textarea name="onderwerp" placeholder="Discription..." rows="13" cols="120"></textarea>
                     <input id="send" name="send" class="send" type="submit" value="submit">
                 </form>
             </div>
         </div>
         <?php
-        if (isset($_POST['send'])) {
-            $naam = $_POST['name'];
-            $email = $_POST['email'];
-            $keuze = $_POST['select'];
-            $subject = $_POST['subject'];
-            $onderwerp = $_POST['onderwerp'];
-            $contactopnemen = array($naam, $email, $keuze, $subject, $onderwerp);
-        }
+        include 'contact_errors.php';
         ?>
-
     </main>
     <script>
         var Amodal = document.getElementById("anouar-modal");
