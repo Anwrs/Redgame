@@ -1,6 +1,6 @@
 <?php
 include 'header.php';
-include 'config/database.php';
+// include 'config/database.php';
 ?>
 
 <!DOCTYPE html>
@@ -10,13 +10,13 @@ include 'config/database.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/forum.css">
     <title>Forum Page</title>
 </head>
 
 <body>
     <main>
-        
+    
     </main>
     <script>
 
