@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    background: rgb(6, 16, 54);
+    background: rgb(6,16,54);
     background: linear-gradient(148deg, #050922 0%, #6EE6C7 100%);
     display: flex;
     flex-direction: column;
@@ -148,6 +148,7 @@ header {
     border-radius: 15%;
 }
 
+
 /*  HIER IS DE LOGIN PAGINAAAAAAAAAA                   #fd4ff5     */
 
 .login {
@@ -158,7 +159,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(6, 16, 54);
+    background: rgb(6,16,54);
     background: linear-gradient(148deg, #050922 0%, #d063fc 100%);
 }
 
@@ -315,7 +316,9 @@ header {
     color: white;
 }
 
+
 /*  HIEEEEERRR IS DEEEEE REGISTERRR PAGINAAAAAAAA               #dfd546                       */
+
 
 .btn-reg {
     position: absolute;

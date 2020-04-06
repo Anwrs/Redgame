@@ -5,4 +5,5 @@ if (count($errors) > 0) {
         echo '<p>' . $error . '</p>';
     }
     echo '</div>';
-}
+} 
+?> 

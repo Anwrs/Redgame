@@ -11,7 +11,7 @@ include 'config/inlog/inlog_server.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <title>Loggin in :)</title>
+    <title>Log in</title>
 </head>
 
 <body class="login">
@@ -26,8 +26,7 @@ include 'config/inlog/inlog_server.php';
     <div>
     <?php
     include ('config/inlog/inlog_errors.php');
-    echo "$username  $password";
-    ?>  
+    ?>
     </div>
 
     <div class="in-log">
