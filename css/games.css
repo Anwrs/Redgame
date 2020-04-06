@@ -2,6 +2,7 @@ html, body {
     margin: 0px;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -14,16 +15,52 @@ body {
 }
 
 #explanation{
-    font-size: 20px;
-    width: 700px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    width: 100%;    
+    text-shadow: 1px 0 black, -1px 0 black, 0 -1px black, 0 1px black;
 }
 
 .photo{
     height: 100px;
     width: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: .5s;
+}
+
+.photo a {
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.photo:hover {
+    transform: scale(1.4);
 }
 
 #games{
-    height: 60%;
+    height: 100%;
+    right: 30%;
+    display: flex;
+}
+
+#row1, #row2, #row3  {
+    width: 50%;
+    height: 40%;
+    margin: 2%;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 1px 0 black, -1px 0 black, 0 -1px black, 0 1px black;
+}
+
+p {
+    font-size: 17px;
 }
