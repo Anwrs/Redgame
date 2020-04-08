@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 ?>
 
@@ -15,7 +15,7 @@ session_start();
     <header>
         <div class="nav">
             <div class="navimg">
-                <a href="index.php"><img src='images/cover1.png' alt="cover-logo"></a>
+                <a href="index.php"><img src='images/logo/cover1.png' alt="cover-logo"></a>
             </div>
 
             <div class="navbar">
@@ -24,7 +24,7 @@ session_start();
                     <a href="games.php"><i class="fas fa-gamepad"></i> GAMES</a>
                     <a href="forum.php"><i class="fas fa-sticky-note"></i> FORUM</a>
                     <a href="contact.php"><i class="fas fa-comment"></i> CONTACT</a>
-                    <?php 
+                    <?php
                     if (isset($_SESSION['user'])) {
                         echo '<a href="profile.php"><i class="fas fa-user-circle"></i> PROFILE</a>';
                     } else {

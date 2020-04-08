@@ -1,0 +1,234 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.adminbody {
+    background: rgb(6,16,54);
+    background: linear-gradient(148deg, #050922 0%, #84e294 20%, #80e0b0 100%);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+
+.nav {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.navimg {
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.navimg img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    position: relative;
+    left: 5%;
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+
+.bar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bar a {
+    margin-top: 20px;
+    text-decoration: underline transparent;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1;
+    transition: .4s;
+}
+
+.bar i {
+    transition: .4s;
+}
+
+.bar a:hover {
+    text-decoration: underline #1f1d1d;
+}
+
+.bar a:hover i {
+    color: #1f1d1d;
+}
+
+/* MAIN        */
+
+main {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.profielbox {
+    position: relative;
+    width: 80%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.199);
+    border-radius: 10px;
+    margin: auto;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.all {
+    width: 90%;
+    height: 80%;
+    border: solid 5px rgb(255, 255, 255);
+    background: #1f1d1d;
+    margin: auto;
+    padding: 2%;
+    box-shadow: 2px 2px 20px black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+
+.all img {
+    position: relative;
+    width: 200px;
+    height: auto;
+    border: rgb(255, 255, 255) 5px solid;
+    border-radius: 50%;
+}
+
+.left {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.right {
+    width: 75%;
+    height: 100%;
+    position: relative;
+}
+
+.searchbar {
+    width: 100%;
+    height: 10%;
+    border: 3px solid white;
+    background-color: #5a5a5a;
+    color: black;
+    margin:5px;
+    padding:5px;
+}
+
+.searchbar form {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+}
+
+.searchbar form input[type=text] {
+    outline: none;
+    width: 50%;
+    height: 80%;
+    font-size: 20px;
+    margin-right: 5%;
+    border: 2px solid rgb(255, 255, 255);
+    color: black;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px black;
+    background-color: #ececec;
+    transition: .4s;
+}
+
+.searchbar form input[type=text]:focus {
+    color: #5d8653
+}
+
+.searchbar form input[type=submit] {
+    border: 2px solid rgb(255, 255, 255);
+    width: 20%;
+    height: 80%;
+    font-size: 20px;
+    background-color: rgb(199, 250, 186);
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px black;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+    margin-right: 2.5%;
+}
+
+.searchbar form input[type=submit]:hover {
+    background-color: #5d8653;
+    box-shadow: 10px 10px 20px;
+}
+
+.base {
+    width: 100%;
+    height: 80%;
+    border: 3px solid white;
+    background-color: #ececec;
+    color: black;
+    margin:5px;
+    padding:5px;
+    overflow: auto;
+    text-align:justify;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .tdtext {
+      overflow: auto;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  tr {
+      max-height: 200px;
+      height: auto;
+  }

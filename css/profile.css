@@ -4,7 +4,7 @@ html, body {
     width: 100%;
 }
 
-body {
+.profilebody {
     background: rgb(6,16,54);
     background: linear-gradient(148deg, #050922 0%, #052a70 20%, #061097 100%);
     display: flex;
@@ -78,8 +78,8 @@ header {
 }
 
 form {
+    margin-top: 20px;
     width: 20%;
-    height: 0;
     cursor: pointer;
     position: relative;
 }
@@ -96,7 +96,7 @@ form input, form i {
 }
 
 form p {
-    margin:0;
+    margin: 0;
 }
 
 p:hover input {

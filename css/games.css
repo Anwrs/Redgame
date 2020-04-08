@@ -7,23 +7,81 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background: rgb(10,6,42);
-    background: linear-gradient(139deg, rgba(10,6,42,1) 2%, rgba(137,240,255,1) 77%);
-    color: white;
+    background: rgb(48,98,105);
+background: linear-gradient(90deg, rgba(48,98,105,1) 0%, rgba(18,53,58,1) 35%, rgba(48,98,105,1) 100%);
+    background-color: none;
     font-family: 'Roboto Slab', serif;
 }
 
-#explanation{
-    font-size: 20px;
-    width: 700px;
-    text-align: center;
+#gamePage-intro {
+    border-top: white 2px solid;
+    background-image: url('../images/gamePage/top-bar-background.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 900px;
+    height: auto;
 }
 
-.photo{
-    height: 100px;
-    width: 100px;
+#gamePage-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.97);
+    position: absolute;
+    right: 30px;
+    bottom: -20px;
+    min-height: 25%;
+    min-width: 40%;
 }
 
-#games{
-    height: 60%;
+#gamePage-tile h1 {
+    font-size: 50px;
 }
+
+.gameBalk {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 750px;
+}
+
+.gameBalk-content {
+    display: flex;
+    flex-direction: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100;
+    height: 100%;
+}
+
+.gameBalk-content-left {
+    width: 25%;
+}
+.gameBalk-content-right {
+    width: 50%;
+}
+
+.gameBalk-content-left img {
+    height: 450px;
+    width: auto;
+}
+
+hr {
+  width: 100%;
+  color: white;
+
+}
+
+#balk-GTA { background-image: url('../images/gamePage/gameBalk_background/gta-back.jpg'); }
+#balk-Global { background-image: url('../images/gamePage/gameBalk_background/Global-back.png');}
+#balk-Minecraft { background-image: url('../images/gamePage/gameBalk_background/minecraft-back.jpg');}
+#balk-Rainbow { background-image: url('../images/gamePage/gameBalk_background/rainbow-back.jpg');}
+#balk-Witch { background-image: url('../images/gamePage/gameBalk_background/witcher-back.jpg');}
+#balk-League { background-image: url('../images/gamePage/gameBalk_background/league-back.jpg');}

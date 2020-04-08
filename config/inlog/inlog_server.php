@@ -42,7 +42,7 @@ if (isset($_POST['login'])) {
     if (count($errors) == 0) {
         $_SESSION['user'] = $username;
         $_SESSION['color'] = rand(0,6);
-        header("location:profile.php?Logged in");
+        header("location:profile.php?You Logged in");
     }
 
 }

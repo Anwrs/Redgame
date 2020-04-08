@@ -18,7 +18,7 @@ include 'config/inlog/inlog_server.php';
 
     <div class="btn-home">
         <a href="index.php">
-            <i class="fas fa-angle-left"></i>  
+            <i class="fas fa-angle-left"></i>
             HOME
         </a>
     </div>
@@ -31,13 +31,13 @@ include 'config/inlog/inlog_server.php';
 
     <div class="in-log">
         <form class="form-inlog" action="log-in.php" method="post">
-            <img src="images/profile1.png" alt="logo">
-            
+            <img src="images/logo/profile1.png" alt="logo">
+
             <div class="inp">
                 <label for="name">Username</label>
                 <input type="text" placeholder="Your username.." name="username" id="">
             </div>
-            
+
             <div class="inb">
                 <label for="password">Password</label>
                 <input type="password" placeholder="Your password.." name="password" id="">
@@ -47,7 +47,6 @@ include 'config/inlog/inlog_server.php';
         </form>
 
         <div class="extra">
-            <a href="#"><button type="submit">Password forgotten?</button></a>
             <a href="register.php"><button type="submit">Register here!</button></a>
         </div>
     </div>

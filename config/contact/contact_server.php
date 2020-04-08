@@ -1,13 +1,15 @@
-<?php 
+<?php
 $username = "";
 $email = "";
 $choise = "";
 $subject = "";
-$errors = "";
+$errors = array();
+$kijk = array();
+
 
 include 'config/database.php';
 
-if(isset($_POST['send'])){
+if (isset($_POST['send'])) {
     $username = $_POST['name'];
     $email = $_POST['email'];
     $choise = $_POST['select'];
@@ -28,12 +30,10 @@ if(isset($_POST['send'])){
     $choise = htmlentities($choise);
     $subject = htmlentities($subject);
 
+    array_push($kijk, $username, $email, $choise, $subject);
+
     if(empty($username)){
-        array_push($errors, "Username is requierd");
-    }elseif (strlen($username) < 4){
-        array_push($errors, "Username does not exist");
-    }elseif (strlen($username) > 16){
-        array_push($errors , "Username does not exist");
+        array_push($errors, "Username is required");
     }
 
     if (empty($email)) {
@@ -42,26 +42,14 @@ if(isset($_POST['send'])){
         array_push($errors, "Email adress is not valid");
     }
 
-    $stmt = $pdo->prepare("SELECT email FROM users WHERE email=?");
-    $stmt->execute([$email]); 
-    $user_email = $stmt->fetch();
-    if (!$user_email) {
-        array_push($errors, "Email adress does not exist");
-    }
-    
-    $stmt = $pdo->prepare("SELECT username FROM users WHERE username=?");
-    $stmt->execute([$username]); 
-    $user_name = $stmt->fetch();
-    if (!$user_name) {
-        array_push($errors, "Username does not exist");
+    if (empty($choise)){
+        array_push($errors, "Subject is required");
     }
 
     if (count($errors) == 0) {
-        $sql = "INSERT INTO problems (username, email, problem, discription) 
+        $sql = "INSERT INTO problems (username, email, problem, discription)
                         VALUES ( ?, ?, ?, ?)";
         $pdo->prepare($sql)->execute([$username, $email, $choise, $subject]);
-    
-        $created = false;
     }
 
-} 
+}

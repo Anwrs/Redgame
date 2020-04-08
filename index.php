@@ -19,7 +19,7 @@ include 'header.php';
         <div class="main-text">
             <h1>
                 <span style="font-size: 50px; display:flex; align-items:center; justify-content:center;">
-                    Welcome to<img style="width:200px; position:relative; left: 15px;" src="images/coverredgame.png" alt="redgame">
+                    Welcome to<img style="width:200px; position:relative; left: 15px;" src="images/logo/coverredgame.png" alt="redgame">
                 </span><br>
                 On our website you can talk to other dedicated gamers about your favorite game!
                 You can talk about tactics, updates, new meta's and your experiences with the game.
@@ -28,58 +28,26 @@ include 'header.php';
 
         <div class="main-games">
             <?php
-            $mc = '<div  class="gamebox">
-        <a href="">
-        <img src="images/mc.jpg" alt="game">
-        Minecraft
-        </a>
-        </div>';
+                $games = [
+                    ['Minecraft' => 'images/gamepics/mc.jpg'],
+                    ['GTA V' => 'images/gamepics/gta.jpg'],
+                    ['Rainbow Six <br> Siege' => 'images/gamepics/rs.jpg'],
+                    ['CS:GO' => 'images/gamepics/cs.jpg'],
+                    ['League of <br> Legends' => 'images/gamepics/lo.jpg'],
+                    ['The Witcher' => 'images/gamepics/tw.jpg']
+                ];
+                shuffle($games);
 
-            $gta = '<div  class="gamebox">
-        <a href="">
-        <img src="images/gtacover.jpg" alt="game">
-        GTA V
-        </a>
-        </div>';
-
-            $rs = '<div  class="gamebox">
-        <a href="">
-        <img src="images/rs.jpg" alt="game">
-        Rainbow Six<br>Siege
-        </a>
-        </div>';
-
-            $lol = '<div  class="gamebox">
-        <a href="">
-        <img src="images/lo.jpg" alt="game">
-        League of<br> Legends
-        </a>
-        </div>';
-
-            $cs = '<div  class="gamebox">
-        <a href="">
-        <img src="images/cs.jpg" alt="game">
-        CS:GO
-        </a>
-        </div>';
-
-            $tw = '<div  class="gamebox">
-        <a href="">
-        <img src="images/tw.jpg" alt="game">
-        The witcher
-        </a>
-        </div>';
-
-            $ar = array($mc, $rs, $gta, $cs, $tw, $lol);
-            shuffle($ar);
-
-            echo ($ar[0]);
-            echo ($ar[1]);
-            echo ($ar[2]);
-            echo ($ar[3]);
-            echo ($ar[4]);
-            echo ($ar[5]);
-            ?>
+                foreach($games as $game): ?>
+                    <?php foreach($game as $title => $src): ?>
+                        <div  class="gamebox">
+                            <a href="games.php?game=<?= $title ?>">
+                                <img src="<?= $src ?>" alt="game">
+                                <?= $title ?>
+                            </a>
+                        </div>
+                    <?php endforeach; ?>
+                <?php endforeach; ?>
         </div>
     </main>
 </body>

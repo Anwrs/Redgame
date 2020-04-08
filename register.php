@@ -1,6 +1,6 @@
-<?php 
+<?php
 include 'config/database.php';
-include 'config/register/register_server.php'; 
+include 'config/register/register_server.php';
 ?>
 
 
@@ -19,15 +19,15 @@ include 'config/register/register_server.php';
 
     <div class="btn-reg">
         <a href="log-in.php">
-            <i class="fas fa-angle-left"></i>  
+            <i class="fas fa-angle-left"></i>
             LOGIN
         </a>
     </div>
 
     <div>
     <?php
-    include ('config/register/register_errors.php');
-    ?>  
+    include 'config/register/register_errors.php';
+    ?>
     </div>
 
     <div>
@@ -45,8 +45,8 @@ include 'config/register/register_server.php';
 
     <div class="register">
         <form class="form-reg" action="register.php" method="post">
-            <img src="images/profile1.png" alt="logo">
-            
+            <img src="images/logo/profile1.png" alt="logo">
+
             <label for="name">Username</label>
             <input type="text" placeholder="Your username" name="username">
 
@@ -60,7 +60,7 @@ include 'config/register/register_server.php';
                     <input type="radio" id="bol" name="gender" value="male">Male
                 </div>
             </div>
-            
+
             <label for="password">Password</label>
             <input type="password" placeholder="Your password" name="password">
             <input type="password" placeholder="Confirm password" name="password_two">

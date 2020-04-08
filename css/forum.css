@@ -5,8 +5,9 @@ html, body {
 }
 
 body {
-    background: #0a062a;
-    background: linear-gradient(90deg, #ff821b, #ff5100 50%, #ff821b);
+    background-size: auto;
+    background: rgb(58,44,71);
+    background: linear-gradient(90deg, rgba(58,44,71,1) 0%, rgba(111,64,158,1) 18%, rgba(143,49,237,1) 50%, rgba(111,64,158,1) 82%, rgba(58,44,71,1) 100%);
 }
 
 main {
@@ -23,6 +24,20 @@ main {
     min-height: 100px;
 }
 
+.make_post{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 40%;
+    background: radial-gradient(circle, #ff5100, #ff821b 90%);
+    cursor: pointer;
+}
+
 .post {
     display: flex;
     position: relative;
@@ -35,6 +50,7 @@ main {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.336);
     color: black;
 }
+
 
 .rea {
     cursor: pointer;
@@ -52,10 +68,14 @@ main {
     transition: .2s;
 }
 
+#responding_page{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
 .rea:hover {
     transform: scale(1.2);
-    bottom: 15px;
-    left: 20px;
 }
 
 .like {
