@@ -26,7 +26,7 @@ include 'header.php';
             echo "
                 <div class='post'>
                     <h1>Deze game is echt top, 10/10 zou hem zeker aan raden!</h1>
-                    <div class='rea'><a id='responding_page' href='https://www.google.com/' target='_blank'>Respond!</a></div>
+                    <div class='rea'><a id='responding_page' href='nieuw.php' target='_blank'>Respond!</a></div>
                     <div class='like'><i class='fas fa-heart'></i><a>like</a> [0]</div>
                     <div class='dislike'><i class='fas fa-heart-broken'></i><a>dislike</a> [0]</div>
                 </div>";
